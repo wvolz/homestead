@@ -25,7 +25,7 @@ class Homestead
 
     # Configure A Private Network IP
     if ['vmware_desktop', 'vmware_fusion'].include? ENV['VAGRANT_DEFAULT_PROVIDER']
-      if RUBY_PLATFORM.match(/darwin/)
+      if RUBY_PLATFORM.match(/darwin2/)
         config.vm.network :private_network
       end
     else
